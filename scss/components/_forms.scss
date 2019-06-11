@@ -1,0 +1,214 @@
+
+
+/***********************
+MAIN STYLES
+***********************/
+
+
+fieldset {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px auto;
+}
+
+legend {
+    color: #fff;
+}
+
+
+/***************************
+MAIN CONTENT
+***************************/
+
+
+label {
+    margin: 9px 0;
+    height: 15px;
+}
+
+.full-name {
+    margin-top: 0;
+}
+
+input, select, #textarea {
+    width: 100%;
+    background: $theme-primary;
+    border-radius: 4px;
+    border: solid 2px $theme-secondary;
+    margin-bottom: 9px;
+}
+
+textarea {
+    padding: 15px;
+}
+
+#name,
+#mail,
+#tel,
+ {
+    height: 50px;
+    margin: 10px 0 12px;
+}
+
+input, textarea {
+    padding-left: 10px;
+    color: $font-c-secondary;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+/***************************
+PSEUDO 
+***************************/
+
+#textarea:focus, #county:focus, input:focus {
+    background: $med-blue;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+#textarea:hover, #county:hover, input:hover {
+    background: $med-blue;
+    transition-duration: 1s;
+}
+
+
+input::placeholder, textarea::placeholder {
+    color: $light-green;
+    text-align: right;
+    font-style: italic;
+}
+
+
+select,
+    #name,
+    #mail,
+    #tel {
+        padding-right: 20px;
+    }
+
+.pctext {
+    margin-right: 200px;
+}
+
+#postcode {
+    width: 150px;
+}
+
+.selector {
+    margin: auto 10px 0 0;
+    width: auto;
+    vertical-align: middle;
+}
+
+.tag {
+    margin: auto;
+}
+
+.subheader {
+    margin: 9px 0 20px;
+}
+
+input.selector {
+    width: auto;
+}
+
+#textarea {
+    height: 100px;
+}
+
+.submit {
+    margin: 20px 0 0;
+    height: 60px;
+    background: $theme-primary;
+    border: solid 2px $theme-secondary;
+    border-radius: 10px;
+    color: $theme-secondary;
+    font-size: 18px;
+    width: 277.5px;
+}
+
+footer {
+    text-align: center; 
+    font-style: italic;
+}
+
+footer p {
+    margin: 10px 0 180px;    
+}
+
+/***************************
+BACKGROUND STYLES
+***************************/
+
+.wrapper {
+    background: $theme-primary;
+    padding: 80px 0;
+}
+
+.subheader {
+    background: $theme-secondary;
+}
+
+
+/***************************
+STYLES FOR LARGER SCREENS
+***************************/
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 550px;
+        margin: auto;
+} 
+    fieldset {
+        width: 550px;
+    }
+    
+    hr {
+        width: 525.5px;
+    }
+    
+    .top-hr {
+        width: 523.5px;
+    }
+    
+    
+    h3.heading {
+        font-size: 20px;
+        margin-top: 55px;
+    }
+    
+    #textarea, .submit {
+        width: 100%;
+    }
+    
+    /**************************
+    FIELDSET 
+    **************************/
+
+    
+    select,
+    #name,
+    #mail,
+    #tel, {
+        margin-top: 0;
+    }
+    
+    .block-2 {
+        margin-top: 20px;
+    }
+    
+    .block-2 label {
+        padding-top: 17.5px;
+    }
+    
+    .subheader {
+        width: 100%;
+    }
+
+}

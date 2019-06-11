@@ -1,0 +1,226 @@
+.home {
+    background-image: url('../images/chris-barbalis-123802.jpg');
+    height: 600px;
+  }
+
+.my-work {
+    background-image: url('../images/milky-way-2695569_1920\ copy.jpg');
+}
+
+.contact {
+    background-image: url('../images/jonatan-pie-198162.jpg');
+}
+
+
+  a.twitter {
+    background-image: url(../images/twitter.svg);
+  }
+  a.linkedin {
+    background-image: url(../images/linkedin.svg);
+  }
+  a.github {
+    background-image: url(../images/github.svg);
+  }
+
+
+  /********************
+
+  ICONS
+
+  **********************/
+
+    a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+
+  a.social:hover {
+    opacity: 1;
+  }
+  .clearfix {
+    clear: both;
+  }
+
+  header .profile-image {
+    margin-top: 210px;
+    width: em(150px);
+    height: auto;
+    transition: all .5s;
+    z-index: 1000;
+  }
+
+  header .profile-image:hover {
+    transform: scale(1.4) rotate(360deg);
+  }
+
+  .divider {
+      max-width: em(300px);
+  }
+
+
+.testemonials {
+    background-image: url(../images/home-office-599475_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-attachment: inherit;
+}
+
+ mock-wrapper {
+     text-align: center;
+ }
+
+ .mock-img {
+     max-width: 300px;
+     padding-bottom: 40px;
+ }
+
+
+  .top-logo {
+      width: 45px;
+      margin: auto;
+      float: left;
+  }
+
+ /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .screenshot-container {
+    background-image: url(../images/meadow-3375052_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    padding: 80px 0;
+      @include mq(medium) {
+        background-image: url(../images/binary-1327493_1280.jpg);
+      }
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: inherit;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #222;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  //styles for larger screens:
+
+  @media screen and (min-width: 1024px) {
+    .screenshot-container, .testemonials, .home   {
+        background-attachment: fixed;
+    }
+
+  }
+
+  /****************************
+MAP STYLES
+****************************/
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.map-address {
+  margin-bottom: 60px;
+}
+
+  /****************************
+Icons
+****************************/
+
+.svg-inline--fa {
+  color: $theme-secondary;
+  font-size: 3em;
+}

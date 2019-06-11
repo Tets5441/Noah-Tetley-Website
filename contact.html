@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wasted-Years-Web-Design-Contact-Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
+  <link href="css/css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/css/brands.min.css" rel="stylesheet">
+  <link href="css/css/solid.min.css" rel="stylesheet">
+  <script defer src="js/all.js"></script>
+</head>
+  <body>
+        <div class="main-nav">
+        <a href="index.html" class="logo-link"><img src="images/wastedyearslogo.png" class="top-logo"></a>
+    <!--hamburger nav menu-->
+        <div class="header"></div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li>Noah Tetley<span>Web Developer</span></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    <header class="contact">
+      <img src="images/wastedyearslogo2.png" alt="Wasted Years logo" class="profile-image">
+    </header>
+        <div class="main-heading">
+            <h1 class="tag name">Front-End Web Developer</h1>
+            <p class="tag location">I design and build modern &amp; responsive websites</p>     
+        </div>
+        <marquee behavior="scroll" direction="left" class="scroll">This website is under development     This website is under development    This website is under development    </marquee>
+    </div>
+
+     <div class="wrapper">
+         <h2>Contact</h2>
+         <p>Please get in touch with any questions or ideas you have and i'll get back to you ASAP!</p>
+        <fieldset>
+            <legend class="heading heading-top">FORM NOT CURRENTLY ACTIVE</legend>           
+            <div class="block-2">
+            <input required type="text" id="name" name="user-name" placeholder="Name-Required">
+            </div>
+            
+            <div class="block-2">
+            <input required type="email" id="mail" name="user-email" placeholder="Email-Required">
+            </div>
+            
+            <div class="block-2">
+            <input required type="tel" id="tel" name="user-phone-numbr" placeholder="Telephone">
+            </div>   
+                <textarea id="textarea" name="textarea" placeholder="your message here!"></textarea>
+                <button type="submit" class="submit">Send message</button>                              
+        </fieldset>
+        <div class="card temp flex">
+            <p><strong>&#9993; email</strong>: <a href="mailto:noah@wastedyears.co.uk?subject=Hi%20Noah">Send me an email</a></p>
+            <p><strong>&phone; phone:</strong> 07886 502384</p>  
+      </div>  
+        </div>
+        <div id="map"></div>
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/Wasted-Years-Digital-239239943670721/?modal=admin_todo_tour"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/WastedDigital?lang=en"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="https://linkedin.com/in/noah-tetley-acicm-bb998590"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/tets5441"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://www.instagram.com/wastedyearsdigital/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      <p class="copyright">Copyright 2019, Noah Tetley</p>
+      <p><a href="privacy.html">Privacy Policy</a></p> 
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function initMap() {
+          var uluru = {lat: 50.7255783, lng: -3.5096041};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl_3P9z9gOekCpYP7rVrmCF8o6CHWfObg&callback=initMap">
+      </script>
+  </body>
+  </html>

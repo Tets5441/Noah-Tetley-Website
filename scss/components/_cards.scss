@@ -1,0 +1,91 @@
+.card-wrapper, .row-2, {
+  @include flexbox ($disp: flex,
+  $dir: column,
+  $wrap: wrap,
+  $just: space-between);
+  align-items: center;
+  background: $theme-primary;
+  color: $font-c-secondary;
+     @include mq(medium) {
+        @include flexbox($dir: row);
+        padding: 50px;
+  }
+} 
+
+.testemonials {
+  @include flexbox ($disp: flex,
+  $dir: column,
+  $wrap: wrap,
+  $just: space-between);
+  @include mq(medium) {
+    @include flexbox($dir: row);
+    padding: 190px 50px;
+  }
+}
+
+.main-heading {
+  background: $theme-primary;
+}
+
+.center {
+  background: $theme-primary;
+}
+
+.card-icon, .card {
+  @include flexbox ($disp: flex,
+        $dir: column,
+        $wrap: wrap,
+        $just: space-between);
+    margin: 30px 10px;
+    padding: 20px 5px;
+    width: 300px;
+    text-align: left;
+    transition: all .5s;
+      @include mq(large) {
+        width: 30%;
+      }
+}
+
+.card-2 {
+  width: 80%;
+  text-align: left;
+  margin: 0 10px;
+    @include mq(large) {
+      width: 30%;
+    }
+  }
+
+  .card:hover {
+   box-shadow: 2px 2px 25px 2px $theme-secondary;
+  }
+
+  .blurb {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 900px;
+    text-align: left;
+    background: $bg-2;
+    transition: all .5s;
+  }
+
+  .blurb,  .card-icon:hover {
+      box-shadow: 2px 2px 25px 2px $theme-secondary;
+  }
+
+ .flex.row-3.blurb-2 {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+  }
+  
+
+  /*******
+  temporary styles for contact card
+  ********/
+
+  .temp {
+    max-width: 500px;
+    margin: auto; 
+  }

@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+    border: solid grey 5px;
+    line-height: 1.5;
+    @include mq(large) {
+        min-height: 470px;
+      }
+  }
+  
+  .tag {
+    color: $theme-secondary;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto 0;
+  } 
+
+  .tag:hover {
+    border-bottom: solid 5px $light-green;
+  }
+
+  .location {
+    color: $light-font;
+  }
+
+  .main-heading {
+    padding-top: 80px;
+  }
+
+ 

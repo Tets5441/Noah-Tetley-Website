@@ -1,0 +1,48 @@
+$font-url-google : "https://fonts.googleapis.com/css?family=Atomic+Age|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i";
+$font-primary   :   'Roberto', sans-serif;
+$font-secondary-sans : cursive;
+
+// 'Atomic Age',
+
+// font weight
+
+$font-weight-thin:  100;
+$font-weight-extra-light:   200;
+$font-weight-light: 300;
+$font-weight-reg:   400;
+$font-weight-bold:  700;
+
+// font-size
+
+$font-size-sm:   16px;
+$font-size-base:   18px;
+$font-size-lg:   1.43em;
+
+
+//----------------------
+//BREAKPOINTS
+//----------------------
+
+$brkpoint-sm    :   1px;
+$brkpoint-md    :   768px;
+$brkpoint-lg    :   1200px;
+
+//----------------------
+//COLORS 
+//----------------------
+
+// font, btn, border
+
+$dark-font   :   #1f2833;
+$light-font  :   #c5c6c7;
+$bg-1        :   #0b0c10;
+$bg-2        :   #66fcf1;
+$light-green :   #45a29e;
+$med-blue    :   #1f2833;
+
+
+$theme-primary  :   $bg-1;
+$theme-secondary:   $bg-2;
+
+$font-c-primary   : $dark-font;
+$font-c-secondary : $light-font;
