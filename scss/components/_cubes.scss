@@ -7,6 +7,7 @@
     margin: em(80px) 0 em(80px);
     @include mq (large) {
         @include flexbox ($dir: row);
+        margin-top: 110px;
     }
 }
 
