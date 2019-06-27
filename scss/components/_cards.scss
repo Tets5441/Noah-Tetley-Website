@@ -1,4 +1,4 @@
-.card-wrapper, .row-2, {
+.card-wrapper, .row-2 {
   @include flexbox ($disp: flex,
   $dir: column,
   $wrap: wrap,
