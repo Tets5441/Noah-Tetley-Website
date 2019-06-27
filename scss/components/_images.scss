@@ -1,6 +1,9 @@
 .home {
     background-image: url('../images/chris-barbalis-123802.jpg');
-    height: 600px;
+    height: 800px;
+    @include mq (large) {
+      height: 600px;
+    }
   }
 
 .my-work {

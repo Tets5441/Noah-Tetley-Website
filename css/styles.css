@@ -490,7 +490,10 @@ STYLES FOR LARGER SCREENS
     width: 100%; } }
 .home {
   background-image: url("../images/chris-barbalis-123802.jpg");
-  height: 600px; }
+  height: 800px; }
+  @media (min-width: 1201px) {
+    .home {
+      height: 600px; } }
 
 .my-work {
   background-image: url("../images/milky-way-2695569_1920 copy.jpg"); }
@@ -879,8 +882,16 @@ header {
     header {
       min-height: 470px; } }
 
+.h1-box {
+  background: rgba(31, 40, 51, 0.5); }
+  @media (min-width: 1201px) {
+    .h1-box {
+      max-width: 30%;
+      float: left;
+      margin: 140px 0 0px 120px; } }
+
 .main-h1 {
-  margin-top: 100px; }
+  margin: 100px 40px; }
 
 .tag {
   color: #66fcf1;
@@ -1042,9 +1053,9 @@ td, th {
 
 .photo-desc {
   font-size: .85em;
-  color: #fff;
+  color: #66fcf1;
   padding: 1.1em 1em 0;
-  background: #345d88; }
+  background: #0b0c10; }
 
 /* ---- Float clearfix ---- */
 /*
@@ -1098,10 +1109,15 @@ td, th {
 .right {
   transform: translateZ(-110px) rotateY(180deg); }
 
-#carousel {
+.slider-section {
+  background: #0b0c10; }
+
+.carousel {
   position: relative;
   width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
 
 #slides {
   overflow: hidden;
@@ -1115,7 +1131,9 @@ td, th {
   height: 250px;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
 
 #slides li {
   width: 100%;
@@ -1135,6 +1153,7 @@ td, th {
   width: 100%; }
 
 #buttons {
+  display: none;
   padding: 0 0 5px 0;
   float: right; }
 
@@ -1149,10 +1168,12 @@ td, th {
   text-decoration: none;
   display: block;
   padding: 9px;
-  width: 35px; }
+  width: 35px;
+  display: flex;
+  flex-wrap: wrap; }
 
 a#prev:hover, a#next:hover {
-  color: #FFF;
+  color: #66fcf1;
   text-shadow: .5px 0px #b14943; }
 
 .quote-phrase {
@@ -1166,7 +1187,8 @@ a#prev:hover, a#next:hover {
 .quote-phrase {
   height: 200px;
   font-size: 24px;
-  color: #FFF;
+  color: #66fcf1;
+  text-shadow: -5px -5px 5px #000;
   font-style: italic;
   text-shadow: .5px 0px #b14943; }
 
@@ -1178,5 +1200,14 @@ a#prev:hover, a#next:hover {
 .quoteContainer {
   display: table;
   width: 100%; }
+
+/* carousel background */
+.carousel {
+  background: rgba(31, 40, 51, 0.5); }
+  @media (min-width: 1201px) {
+    .carousel {
+      max-width: 30%;
+      float: right;
+      margin: 140px 120px 0 0; } }
 
 /*# sourceMappingURL=styles.css.map */

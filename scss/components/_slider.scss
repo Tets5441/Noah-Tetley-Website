@@ -1,7 +1,13 @@
-#carousel {
+.slider-section {
+    background: $bg-1;
+
+}
+
+.carousel {
     position: relative;
     width:60%;
     margin:0 auto;
+    @include flexbox ($disp: flex, $wrap: wrap);
     }
     
     #slides {
@@ -18,6 +24,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+    @include flexbox ($disp: flex, $wrap: wrap);
     }
     
      #slides li {
@@ -39,12 +46,13 @@
     }
     
      #buttons {
+         display:   none;
     padding:0 0 5px 0;
     float:right;
     }
     
     #buttons a {
-    text-align:center;
+    text-align: center;
     display:block;
     font-size:50px;
     float:left;
@@ -55,10 +63,11 @@
     display:block;
     padding:9px;
     width:35px;
+    @include flexbox ($disp: flex, $wrap: wrap);
     }
     
     a#prev:hover, a#next:hover {
-    color:#FFF;
+    color:$bg-2;
     text-shadow:.5px 0px #b14943;  
     }
     
@@ -74,7 +83,8 @@
     .quote-phrase {
     height: 200px;
     font-size:24px;
-    color:#FFF;
+    color:$bg-2;
+    text-shadow: -5px -5px 5px #000;
     font-style:italic;
     text-shadow:.5px 0px #b14943;  
     }
@@ -88,4 +98,15 @@
     .quoteContainer {
     display: table;
     width: 100%;
+    }
+
+    /* carousel background */
+
+    .carousel {
+        background: rgba(31, 40, 51, .5);
+        @include mq (large) {
+        max-width: 30%;
+        float: right;
+        margin: 140px 120px 0 0;
+        }
     }
