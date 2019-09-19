@@ -1,0 +1,29 @@
+.quote {
+    font-size: 24px;
+    color: #fff;
+    padding: 10px;
+    background: $theme-primary;
+    border: solid $theme-primary 2px;
+    border-radius: 5px;
+}
+
+#home-form a {
+    color: #fff;
+}
+
+button a {
+    padding: em(10px);
+}
+
+button:hover {
+    background: #fff;
+    color: $theme-primary;
+}
+
+button a:hover {
+    color: $theme-primary;
+}
+
+.btm-margin {
+    margin-bottom: 60px;
+}

@@ -2,9 +2,9 @@
   @include flexbox ($disp: flex,
   $dir: column,
   $wrap: wrap,
-  $just: space-between);
+  $just: space-around);
   align-items: center;
-  background: $theme-primary;
+  background: $theme-secondary;
   color: $font-c-secondary;
      @include mq(medium) {
         @include flexbox($dir: row);
@@ -12,16 +12,52 @@
   }
 } 
 
-.testemonials {
+
+.card {
+  min-height: 352px;
+}
+
+.wrapper-grey {
+  background: $theme-tertiary;
+}
+
+/*TESTIMONIALS SECTION */
+
+.testimonials {
   @include flexbox ($disp: flex,
   $dir: column,
   $wrap: wrap,
-  $just: space-between);
+  $just: space-around);
   @include mq(medium) {
     @include flexbox($dir: row);
-    padding: 190px 50px;
+    padding: 80px 50px;
   }
 }
+
+.why-us {
+  background-image: url(../images/home-office-599475_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  padding: 80px 0;
+}
+
+.column-left {
+  
+  color: $theme-secondary;
+  @include mq (medium) {
+    text-align: left;
+    max-width: 50%;
+    height: auto;
+    padding-left: em(100px);
+  }
+ }
+
+ .column-left hr {
+   @include mq (medium) {
+     float: left;
+   }
+ }
 
 .main-heading {
   background: $theme-primary;
@@ -35,21 +71,24 @@
   @include flexbox ($disp: flex,
         $dir: column,
         $wrap: wrap,
-        $just: space-between);
+        $just: space-around);
     margin: 30px 10px;
-    padding: 20px 5px;
-    width: 300px;
-    text-align: left;
+    padding: 20px 20px;
+    text-align: center;
     transition: all .5s;
+    min-height: 320px;
+    border: solid $border-light 1px;
       @include mq(large) {
         width: 30%;
       }
 }
 
 .card-2 {
-  width: 80%;
-  text-align: left;
-  margin: 0 10px;
+  text-align: center;
+  margin: 10px;
+  background: rgba(5, 5, 5, .5);
+  padding: 10px;
+  border-radius: 5px;
     @include mq(large) {
       width: 30%;
     }
@@ -63,7 +102,7 @@
     margin: 30px;
     padding: 20px 40px 40px;
     max-width: 900px;
-    text-align: left;
+    text-align: center;
     background: $bg-2;
     transition: all .5s;
   }

@@ -1,9 +1,48 @@
+/******************
+
+HEADER
+
+******************/
+
+h1 {
+  color: $theme-secondary;
+  font-size: em(60px);
+  margin-top: 180px;
+}
+
+  .color-head {
+    color: $theme-primary;
+  }
+
+
+/******************
+
+HEADER END
+
+******************/
+
+.wrapper-grey p {
+  padding: 0 10px;
+}
+
+p {
+  margin-top: 0;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
 .tag {
     font-family: $font-secondary-sans;
 }
 
-h2 {
- color: $theme-secondary;
+h3 {
+ color: $theme-primary;
+ font-size: 26px;
+ margin: 0;
 }
 
 .align-left {
@@ -12,6 +51,23 @@ h2 {
 
 .testemonials {
     color: #fff;
+}
+
+.test-p {
+  color: $theme-secondary;
+}
+
+.testimonial-person,
+.testimonial-company {
+  color: $theme-primary;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
 }
 
 .port-heading {
@@ -27,4 +83,15 @@ h2 {
   color: #000;
   padding: 80px;
   text-align: left;
+}
+
+h3 .test-title {
+  padding-bottom: 20px;
+}
+
+/***************
+LINKS
+****************/
+a {
+  color: #fff;
 }

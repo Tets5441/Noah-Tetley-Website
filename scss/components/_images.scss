@@ -1,9 +1,6 @@
 .home {
-    background-image: url('../images/chris-barbalis-123802.jpg');
-    height: 800px;
-    @include mq (large) {
-      height: 600px;
-    }
+    background-image: url('../images/bgimg.jpg');
+    height: 100%;
   }
 
 .my-work {
@@ -23,6 +20,10 @@
   }
   a.github {
     background-image: url(../images/github.svg);
+  }
+
+  .mb-img {
+    max-width: 300px;
   }
 
 
@@ -51,32 +52,15 @@
     clear: both;
   }
 
-  header .profile-image {
-    margin-top: 210px;
-    width: em(150px);
-    height: auto;
-    transition: all .5s;
-    z-index: 1000;
-  }
-
-  header .profile-image:hover {
-    transform: scale(1.4) rotate(360deg);
-  }
-
-  .divider {
-      max-width: em(300px);
-  }
-
-
-.testemonials {
-    background-image: url(../images/home-office-599475_1920.jpg);
+.test-wrapper {
+    background-image: url(../images/workplace-1245776_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     background-attachment: inherit;
 }
 
- mock-wrapper {
+ .mock-wrapper {
      text-align: center;
  }
 
@@ -87,7 +71,7 @@
 
 
   .top-logo {
-      width: 45px;
+      width: 150px;
       margin: auto;
       float: left;
   }
@@ -98,18 +82,7 @@
     position: relative;
     margin: auto;
   }
-
-  .screenshot-container {
-    background-image: url(../images/meadow-3375052_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: inherit;
-    padding: 80px 0;
-      @include mq(medium) {
-        background-image: url(../images/binary-1327493_1280.jpg);
-      }
-  }
-  
+ 
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -201,7 +174,7 @@
   //styles for larger screens:
 
   @media screen and (min-width: 1024px) {
-    .screenshot-container, .testemonials, .home   {
+    .screenshot-container, .testimonials, .home   {
         background-attachment: fixed;
     }
 
@@ -225,6 +198,35 @@ Icons
 ****************************/
 
 .svg-inline--fa {
-  color: $theme-secondary;
+  color: $theme-primary;
   font-size: 3em;
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+.svg-inline--fa:hover {
+  font-size: 3.5em;
+  transition: 0.5s;
+  transform: rotate(45deg);
+}
+
+.fab,
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-linkedin,
+.fa-github-square,
+.fa-instagram {
+  color: $theme-secondary;
+}
+
+.hr-1 {
+  max-width: em(100px);
+  border: 2px solid $theme-primary;
+  border-radius: em(10px);
+}
+
+.customers {
+  width: 300px;
+  margin: 10px 0;
+  box-shadow: 1px 1px 15px 1px $theme-primary;
 }

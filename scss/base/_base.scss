@@ -6,9 +6,10 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: $theme-secondary;
+    font-family: $font-primary;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: $font-c-primary;
     background: #fff;
   }
 
@@ -32,4 +33,13 @@
        }
   }
 
+  .clearfix {
+    overflow: hidden;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
  
