@@ -39,7 +39,7 @@ $bg-1        :   #00b6ff;
 $bg-2        :   #fff;
 $bg-3        :   #f7f7f7;
 $dark-font-2 :   #525252;
-$med-blue    :   #1f2833;
+$hover       :   #FC641F;
 $border-light:   #E3E5E6;
 
 // main theme backgrounds
@@ -52,3 +52,8 @@ $theme-tertiary:    $bg-3;
 
 $font-c-primary   : $dark-font;
 $font-c-secondary : $dark-font-2;
+
+// border
+
+$b : 1.5em;
+$blur: blur(9px);

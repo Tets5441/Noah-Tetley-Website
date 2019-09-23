@@ -10,6 +10,9 @@
   <link href="css/css/fontawesome.min.css" rel="stylesheet">
   <link href="css/css/brands.min.css" rel="stylesheet">
   <link href="css/css/solid.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   <script defer src="js/all.js"></script>
 </head>
   <body>
@@ -84,33 +87,34 @@
                     </div> 
         </div>
     </div>
-    <div class="why-us">
+    <div class="why-us flex">
                 <div class="column-left">
                     <h2 class="port-heading">WHY CHOOSE US</h2>
-                    <hr class="hr-1 clearfix">
+                    <hr class="hr-1 choose-us">
                     <p>We specialise in small/micro business and personal projects offereing effective and affordable solutions to helo you get and optimise your online presence</p>
                 </div>
+                <img class="iphone" src="images/ntweb-iphone.png">  
         </div>
             <div class="portfolio">
-                <h2>Creative Solutions</h2>
+                <h2 class="h2-margin-top">Creative Solutions</h2>
                 <hr class="hr-1">
                 <p>Some of our clients</p>
                 <div class="flex  card-wrapper">
-                    <a href="https://appyventures.com/" target="_blank"><img src="images/appy-shot.png" class="customers"></a>
-                    <a href="http://uksportssupplements.com/" target="_blank"> <img src="images/ukss-shot.png" class="customers"></a>
-                    <a href="http://gevatiling.co.uk/" target="_blank"> <img src="images/geva-shot.png" class="customers"></a>
-                    <a href="https://plymouthtreesurgeon.co.uk/" target="_blank">  <img src="images/c&htrees-shot.png" class="customers"></a>
-                    <a href="http://burstonandsonchimneyservices.co.uk/" target="_blank"> <img src="images/burston-shot.png" class="customers"></a>
-                    <a href="https://1file4life.com/" target="_blank"> <img src="images/1f4l-shot.png" class="customers"></a>
-                    <a href="https://freightmovesmidlands.com/" target="_blank"> <img src="images/freight-shot.png" class="customers"></a>
-                    <a href="http://exeterslocalplumber.com/" target="_blank"> <img src="images/segillard-shot.png" class="customers"></a>              
+                    <a href="https://appyventures.com/" target="_blank"><div class="appy clients"></div></a>
+                    <a href="http://uksportssupplements.com/" target="_blank">  <div class="ukss clients"></div></a>
+                    <a href="http://gevatiling.co.uk/" target="_blank">  <div class="geva clients"></div></a>
+                    <a href="https://plymouthtreesurgeon.co.uk/" target="_blank">  <div class="chtree clients"></div></a>
+                    <a href="http://burstonandsonchimneyservices.co.uk/" target="_blank"> <div class="burston clients"></div></a>
+                    <a href="https://1file4life.com/" target="_blank"> <div class="f4l clients"></div></a>
+                    <a href="https://freightmovesmidlands.com/" target="_blank"> <div class="fmoves clients"></div></a>
+                    <a href="http://exeterslocalplumber.com/" target="_blank"> <div class="seg clients"></div></a>              
                 </div>   
                 <button class="quote btm-margin">Start your project</button>              
         </div>
     <div class="test-wrapper flex"> 
             <h2>Happy Customers</h2>
             <hr class="hr-1">
-             <div class="testimonials flex">
+             <div class="single-item flex">
                 <div class="card-2">
                     <h4 class="testimonial-person">Charlotte harverson</h4>
                     <h5 class="testimonial-company">1File4Life</h5>
@@ -120,6 +124,16 @@
                     <h4 class="testimonial-person">A Whitmoor-Pryer </h4>
                     <h5 class="testimonial-company">Kahanah Care</h5>
                     <p class="test-p">"Noah was able to guide us through the design process clearly, and helped us understand the best approach and design for our company. I can honestly state that the service was excellent. The end result has been outstanding and we cannot recommend Noah highly enough"</p>
+                </div>
+                <div class="card-2">
+                        <h4 class="testimonial-person">Person 1</h4>
+                        <h5 class="testimonial-company">company 3</h5>
+                        <p class="test-p">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+                <div class="card-2">
+                        <h4 class="testimonial-person">Person 1</h4>
+                        <h5 class="testimonial-company">company 3</h5>
+                        <p class="test-p">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
                 <div class="card-2">
                         <h4 class="testimonial-person">Person 1</h4>
@@ -164,6 +178,14 @@
       <p class="copyright">Copyright 2019, Noah Tetley</p>
       <p><a href="privacy.html">Privacy Policy</a></p> 
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script
+  src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
+  integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc="
+  crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script>
         function initMap() {
@@ -178,8 +200,7 @@
           });
         }
       </script>
-      <script async defer
-      src="#">
-      </script>
+      <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+      
   </body>
   </html>

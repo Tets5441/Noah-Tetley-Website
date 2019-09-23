@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -403,7 +404,7 @@ textarea {
 
 input, textarea {
   padding-left: 10px;
-  color: #525252;
+  color: #fff;
   font-style: oblique;
   font-size: 20px; }
 
@@ -411,12 +412,12 @@ input, textarea {
 PSEUDO 
 ***************************/
 #textarea:focus, #county:focus, input:focus {
-  background: #1f2833;
+  background: #FC641F;
   transition-timing-function: ease-out;
   transition-duration: 2s; }
 
 #textarea:hover, #county:hover, input:hover {
-  background: #1f2833;
+  background: #FC641F;
   transition-duration: 1s; }
 
 input::placeholder, textarea::placeholder {
@@ -690,9 +691,7 @@ Icons
   padding-bottom: 10px; }
 
 .svg-inline--fa:hover {
-  font-size: 3.5em;
-  transition: 0.5s;
-  transform: rotate(45deg); }
+  color: #FC641F; }
 
 .fab,
 .fa-facebook-square,
@@ -707,11 +706,93 @@ Icons
   border: 2px solid #00b6ff;
   border-radius: 0.5555555556em; }
 
-.customers {
-  width: 300px;
-  margin: 10px 0;
-  box-shadow: 1px 1px 15px 1px #00b6ff; }
+hr.choose-us {
+  position: absolute; }
 
+/*******************************
+customer tiles
+*******************************/
+.appy {
+  background: url(../images/appy-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.ukss {
+  background: url(../images/ukss-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.geva {
+  background: url(../images/geva-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.chtree {
+  background: url(../images/c&htrees-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.burston {
+  background: url(../images/burston-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.f4l {
+  background: url(../images/1f4l-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.fmoves {
+  background: url(../images/freight-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.seg {
+  background: url(../images/segillard-shot.png) 50%/cover border-box padding-box;
+  position: relative;
+  /* same styles as before */ }
+
+.clients {
+  margin: 10px;
+  border: solid 1.5em rgba(0, 0, 0, 0.2);
+  height: 50vmin;
+  width: 16.6666666667em;
+  height: 16.6666666667em;
+  box-shadow: 1px 1px 15px 1px #00b6ff; }
+  .clients:before {
+    position: absolute;
+    z-index: -1;
+    /* go outside padding-box by 
+      * a border-width ($b) in every direction */
+    top: -1.5em;
+    right: -1.5em;
+    bottom: -1.5em;
+    left: -1.5em;
+    border: inherit;
+    border-color: transparent;
+    background: inherit;
+    background-clip: border-box;
+    /* -webkit-prefixed version 
+     * still needed for 
+     * some mobile browsers 💔😭 */
+    -webkit-filter: blur(9px);
+    filter: blur(9px);
+    content: ""; }
+
+/* end customer tiles */
+/*******************************
+iphone
+*******************************/
+.iphone {
+  max-width: 50%;
+  align-self: center; }
+  @media (min-width: 1201px) {
+    .iphone {
+      max-width: 10%;
+      height: auto;
+      margin: auto; } }
+
+/* end i phone */
 a {
   text-decoration: none;
   color: #999; }
@@ -913,6 +994,9 @@ h5 {
 h3 .test-title {
   padding-bottom: 20px; }
 
+.h2-margin-top {
+  margin-top: 3.3333333333em; }
+
 /***************
 LINKS
 ****************/
@@ -1006,11 +1090,20 @@ footer ul li {
       padding: 80px 50px; } }
 
 .why-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-image: url(../images/home-office-599475_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: inherit;
   padding: 80px 0; }
+  @media (min-width: 1201px) {
+    .why-us {
+      display: flex;
+      flex-direction: row;
+      max-height: 22.2222222222em; } }
 
 .column-left {
   color: #fff; }

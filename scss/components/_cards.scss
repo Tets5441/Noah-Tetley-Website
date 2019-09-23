@@ -35,11 +35,17 @@
 }
 
 .why-us {
+  @include flexbox ($disp: flex, $dir: column, $wrap: wrap, $just: space-around);
   background-image: url(../images/home-office-599475_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: inherit;
   padding: 80px 0;
+   @include mq (large) {
+     @include flexbox ($dir: row);
+     max-height: em(400px);
+   }
+
 }
 
 .column-left {

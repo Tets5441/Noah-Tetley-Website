@@ -14,3 +14,14 @@ function scrollFunction() {
    // document.getElementById("logo").style.fontSize = "35px";
   }
 }
+
+$(document).ready(function(){
+  $('.single-item').slick({
+    infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+  });
+});
+
+  
+
