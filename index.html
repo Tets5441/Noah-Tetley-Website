@@ -11,7 +11,6 @@
   <link href="css/css/brands.min.css" rel="stylesheet">
   <link href="css/css/solid.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
 <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   <script defer src="js/all.js"></script>
 </head>
@@ -26,12 +25,14 @@
           <span class="spinner horizontal"></span>
           <span class="spinner diagonal part-2"></span>
         </label>
-        <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <div id="sidebarMenu nav-container">
+            <ul class="sidebarMenuInner nav-flex">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
         </div>
@@ -44,7 +45,7 @@
         <div class="flex wrapper-grey">
                 <img src="images/mb-homepg.png" class="mb-img">
                 <h2>WEBSITE<span class="color-head"> DEVELOPMENT</span></h2>
-            <p>Web Design Exeter by NT Web Design: Take your presence online and grow your business strategy or personal project with a clean, dynamic and professionally developed website. We specialise in small business projects that require a simple affordable solution to boost their digital presence online; what to learn more about us?.....</p>
+            <p class="statement">Web Design Exeter by NT Web Design: Take your presence online and grow your business strategy or personal project with a clean, dynamic and professionally developed website. We specialise in small business projects that require a simple affordable solution to boost their digital presence online; what to learn more about us?.....</p>
         <button class="quote"><a href="about.html">Find out more</a></button>
         </div>
     <div class="card-row flex">
@@ -91,7 +92,7 @@
                 <div class="column-left">
                     <h2 class="port-heading">WHY CHOOSE US</h2>
                     <hr class="hr-1 choose-us">
-                    <p>We specialise in small/micro business and personal projects offereing effective and affordable solutions to helo you get and optimise your online presence</p>
+                    <p>We specialise in small/micro business and personal projects offereing effective and affordable solutions to help you to optimise your online presence</p>
                 </div>
                 <img class="iphone" src="images/ntweb-iphone.png">  
         </div>
@@ -99,15 +100,15 @@
                 <h2 class="h2-margin-top">Creative Solutions</h2>
                 <hr class="hr-1">
                 <p>Some of our clients</p>
-                <div class="flex  card-wrapper">
-                    <a href="https://appyventures.com/" target="_blank"><div class="appy clients"></div></a>
-                    <a href="http://uksportssupplements.com/" target="_blank">  <div class="ukss clients"></div></a>
-                    <a href="http://gevatiling.co.uk/" target="_blank">  <div class="geva clients"></div></a>
-                    <a href="https://plymouthtreesurgeon.co.uk/" target="_blank">  <div class="chtree clients"></div></a>
-                    <a href="http://burstonandsonchimneyservices.co.uk/" target="_blank"> <div class="burston clients"></div></a>
-                    <a href="https://1file4life.com/" target="_blank"> <div class="f4l clients"></div></a>
-                    <a href="https://freightmovesmidlands.com/" target="_blank"> <div class="fmoves clients"></div></a>
-                    <a href="http://exeterslocalplumber.com/" target="_blank"> <div class="seg clients"></div></a>              
+                <div class="flex  card-wrapper clients-wrapper">
+                    <a href="https://appyventures.com/" target="_blank"><img src="images/appy-shot.png" class="clients"></a>
+                    <a href="http://uksportssupplements.com/" target="_blank">  <img src="images/ukss-shot.png" class="clients"></a>
+                    <a href="http://gevatiling.co.uk/" target="_blank">  <img src="images/geva-shot.png" class="clients"></a>
+                    <a href="https://plymouthtreesurgeon.co.uk/" target="_blank">  <img src="images/c&htrees-shot.png" class="clients"></a>
+                    <a href="http://burstonandsonchimneyservices.co.uk/" target="_blank"> <img src="images/burston-shot.png" class="clients"></a>
+                    <a href="https://1file4life.com/" target="_blank"> <img src="images/1f4l-shot.png" class="clients"></a>
+                    <a href="https://freightmovesmidlands.com/" target="_blank"> <img src="images/freight-shot.png" class="clients"></a>
+                    <a href="http://exeterslocalplumber.com/" target="_blank"> <img src="images/segillard-shot.png" class="clients"></a>              
                 </div>   
                 <button class="quote btm-margin">Start your project</button>              
         </div>
@@ -144,8 +145,8 @@
             </div>
 
      <div class="wrapper">
-         <h2>Contact</h2>
-         <p>Please get in touch with any questions or ideas you have and we'll get back to you ASAP!</p>
+         <h2>START YOUR PROJECT</h2>
+         <p>Please fill out the form if you are ready to get started, or just have some questions about our services, we'll get back to you asap!</p>
         <fieldset id="home-form">
             <legend class="heading heading-top">FORM NOT CURRENTLY ACTIVE</legend>           
             <div class="block-2">
@@ -162,10 +163,6 @@
                 <textarea id="textarea" name="textarea" placeholder="your message here!"></textarea>
                 <button type="submit" class="submit">Send message</button>                              
         </fieldset>
-        <div class="card temp flex">
-            <p><strong>&#9993; email</strong>: <a href="mailto:noah@wastedyears.co.uk?subject=Hi%20Noah">Send me an email</a></p>
-            <p><strong>&phone; phone:</strong> 07886 502384</p>  
-      </div>  
     </div>
     <footer>
       <ul>

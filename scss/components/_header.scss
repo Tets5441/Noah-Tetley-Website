@@ -8,7 +8,7 @@ header {
     border: solid grey 5px;
     line-height: 1.5;
     @include mq(large) {
-        min-height: 470px;
+        min-height: 800px;
       }
   }
 

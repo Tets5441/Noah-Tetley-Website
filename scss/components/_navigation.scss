@@ -22,7 +22,7 @@ a {
     z-index: 99;
   }
 
-  /**************************************
+    /**************************************
   Nav hamburger menu The necessary CSS styles for the navigation.
   **************************************/
 
@@ -145,4 +145,53 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   box-sizing: border-box;
   transform: rotate(-135deg);
   margin-top: -9px;
+}
+
+
+/* end side bar*/
+
+/**************************************
+ Media Queries
+ **************************************/
+
+ .sidebarIconToggle {
+  @include mq (large) {
+      display: none;
+  }
+}
+
+
+
+.nav-flex {
+  display: block;
+  @include mq (large) {
+    @include flexbox ($disp: flex, $dir: row, $wrap: nowrap, $just: space-between);
+    margin: 10px 10px 0 500px;
+    padding: 10px 10px 0 10px;
+    border: none;
+  }
+}
+
+.nav-flex li {
+  @include mq (large) {
+    padding: 0 10px;
+    &:hover {
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 10px;
+      border-bottom: 2px solid $hover;
+      border-radius: 2px;
+    }
+  }
+}
+}
+
+.nav-flex li a {
+  @include mq (large) {
+    text-transform: lowercase;
+    margin: 0 10px;
+  }
 }

@@ -8,6 +8,16 @@ h1 {
   color: $theme-secondary;
   font-size: em(60px);
   margin-top: 180px;
+    @include mq (large) {
+      padding-top: 100px;
+    }
+}
+
+.statement {
+  @include mq (large) {
+    max-width: em(1400px);
+    margin: 0 auto 40px auto;
+  }
 }
 
   .color-head {

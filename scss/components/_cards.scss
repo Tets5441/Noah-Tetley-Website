@@ -100,6 +100,11 @@
     }
   }
 
+  .clients-wrapper {
+    max-width: 1424px;
+    margin: auto;
+  }
+
   .card:hover {
    box-shadow: 2px 2px 25px 2px $theme-secondary;
   }

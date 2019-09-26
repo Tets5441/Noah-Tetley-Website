@@ -58,6 +58,7 @@
     background-size: cover;
     align-items: center;
     background-attachment: inherit;
+    padding-bottom: 0;
 }
 
  .mock-wrapper {
@@ -231,91 +232,12 @@ hr.choose-us {
 customer tiles
 *******************************/
 
-.appy {
-  background: url(../images/appy-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.ukss {
-  background: url(../images/ukss-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.geva {
-  background: url(../images/geva-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.chtree {
-  background: url(../images/c&htrees-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.burston {
-  background: url(../images/burston-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.f4l {
-  background: url(../images/1f4l-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.fmoves {
-  background: url(../images/freight-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
-.seg {
-  background: url(../images/segillard-shot.png) 50%/ cover 
-    border-box /* background-origin */
-    padding-box /* background-clip */;
-    position: relative;
-    /* same styles as before */  
-}
 
 .clients {
-  margin: 10px;
-  border: solid $b rgba(#000, .2);
-  height: 50vmin;
+  margin: em(10px);
   width: em(300px);
   height: em(300px);
   box-shadow: 1px 1px 15px 1px $theme-primary;
-
-    
-    &:before {
-      position: absolute;
-      z-index: -1;
-      /* go outside padding-box by 
-        * a border-width ($b) in every direction */
-      top: -$b; right: -$b; bottom: -$b; left: -$b;
-      border: inherit;
-		border-color: transparent;
-		background: inherit;
-		background-clip: border-box;
-		/* -webkit-prefixed version 
-		 * still needed for 
-		 * some mobile browsers 💔😭 */
-		-webkit-filter: $blur;
-						filter: $blur;
-		content: ''
-          
-
-  }
 }
 
 /* end customer tiles */
@@ -332,6 +254,11 @@ iphone
       height: auto;
       margin: auto;
     }
+}
+
+.iphone:hover {
+  transform: rotate(15deg);
+  transition: 1.2s;
 }
 
 /* end i phone */
