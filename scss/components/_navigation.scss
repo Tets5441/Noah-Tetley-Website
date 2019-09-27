@@ -26,7 +26,7 @@ a {
   Nav hamburger menu The necessary CSS styles for the navigation.
   **************************************/
 
-  #sidebarMenu {
+  .sidebarMenu {
     height: 100%;
     position: fixed;
     right: 0;
@@ -71,7 +71,7 @@ a {
  Style & animate the hamburger toggle button.
  **************************************/
 
- input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0); }
+ input[type="checkbox"]:checked ~ .sidebarMenu { transform: translateX(0); }
 
 input[type=checkbox] {
   transition: all 0.3s;
@@ -160,10 +160,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 }
 
-
+.sidebarMenuInner li {
+  @include mq (large) {
+    border-bottom: none;
+  }
+}
 
 .nav-flex {
-  display: block;
   @include mq (large) {
     @include flexbox ($disp: flex, $dir: row, $wrap: nowrap, $just: space-between);
     margin: 10px 10px 0 500px;
@@ -175,23 +178,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .nav-flex li {
   @include mq (large) {
     padding: 0 10px;
-    &:hover {
-    &:after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      padding-top: 10px;
-      border-bottom: 2px solid $hover;
-      border-radius: 2px;
-    }
   }
-}
 }
 
 .nav-flex li a {
   @include mq (large) {
     text-transform: lowercase;
     margin: 0 10px;
+    &:hover {
+      color: $hover;
+      transition: 1.2s;
+    }
   }
 }

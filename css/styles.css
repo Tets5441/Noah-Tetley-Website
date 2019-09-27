@@ -759,7 +759,7 @@ a:hover {
   /**************************************
 Nav hamburger menu The necessary CSS styles for the navigation.
 **************************************/
-#sidebarMenu {
+.sidebarMenu {
   height: 100%;
   position: fixed;
   right: 0;
@@ -798,7 +798,7 @@ Nav hamburger menu The necessary CSS styles for the navigation.
 /**************************************
  Style & animate the hamburger toggle button.
  **************************************/
-input[type="checkbox"]:checked ~ #sidebarMenu {
+input[type="checkbox"]:checked ~ .sidebarMenu {
   transform: translateX(0); }
 
 input[type=checkbox] {
@@ -874,34 +874,31 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   .sidebarIconToggle {
     display: none; } }
 
-.nav-flex {
-  display: block; }
-  @media (min-width: 1201px) {
-    .nav-flex {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      margin: 10px 10px 0 500px;
-      padding: 10px 10px 0 10px;
-      border: none; } }
+@media (min-width: 1201px) {
+  .sidebarMenuInner li {
+    border-bottom: none; } }
+
+@media (min-width: 1201px) {
+  .nav-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px 10px 0 500px;
+    padding: 10px 10px 0 10px;
+    border: none; } }
 
 @media (min-width: 1201px) {
   .nav-flex li {
-    padding: 0 10px; }
-    .nav-flex li:hover:after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      padding-top: 10px;
-      border-bottom: 2px solid #FC641F;
-      border-radius: 2px; } }
+    padding: 0 10px; } }
 
 @media (min-width: 1201px) {
   .nav-flex li a {
     text-transform: lowercase;
-    margin: 0 10px; } }
+    margin: 0 10px; }
+    .nav-flex li a:hover {
+      color: #FC641F;
+      transition: 1.2s; } }
 
 /******************
 
