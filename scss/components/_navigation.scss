@@ -166,6 +166,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 }
 
+.sidebarMenu {
+  @include mq(large) {
+    height: 0;
+    margin-top: 0;
+    position: inherit;
+    width: 100%;
+    transform: translateX(0);
+    background: none;
+  }
+}
+
 .nav-flex {
   @include mq (large) {
     @include flexbox ($disp: flex, $dir: row, $wrap: nowrap, $just: space-between);
@@ -189,5 +200,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
       color: $hover;
       transition: 1.2s;
     }
+  }
+}
+
+.sidebarMenu ul {
+  @include mq (large) {
+    display: flex;
   }
 }
