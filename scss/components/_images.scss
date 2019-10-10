@@ -15,6 +15,10 @@
   background-image: url('../images/cyber-3728141_1280.jpg');
 }
 
+.form-info {
+  background-image: url('../images/entrepreneur-1340649_1280.jpg');
+}
+
 
   a.twitter {
     background-image: url(../images/twitter.svg);
@@ -43,31 +47,38 @@
 
   **********************/
 
-  
- .slide-left {
+.devices {
+  width: em(500px);
+  margin-top: em(300px);
+}
+
+/*
+.fade-in {
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+*/
+
+
+.slide-left {
   position: absolute;
-  left: 900px;
   width: 100px;
-  height: 100px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 1s;
-  transform: translate(600px);
+  height: 100px;  
+  animation: slide-in 1s forwards;
 }
 
-@keyframes slide {
-  100% { transform: translateX(0%); }
+
+@keyframes slide-in {
+  from {right: -1000px;}
+  to {right: 440px;}
 }
 
- /* <div class="slide-slow">
-  <div class="inner"> */
- 
 
-  .devices {
-    width: em(500px);
-    margin-top: em(300px);
-  }
+
 
 
   /*** End devices amnnimation ***/

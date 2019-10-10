@@ -116,9 +116,16 @@ a {
   color: #fff;
 }
 
+/******* forms ***/
+
+.home-form {
+  color: $theme-secondary;
+}
+
 /******* Contact page styles *********/
 
 .contact-h1 {
   color: $theme-primary;
   margin: em(80px) 0;
 }
+

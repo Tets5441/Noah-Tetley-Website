@@ -60,8 +60,10 @@ button a:hover {
   }
 
   .quote {
-    float: left;
     width: em(200px);
+    @include mq (large) {
+        float: left;
+    }
 }
 
     /* button Transitions */

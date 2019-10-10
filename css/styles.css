@@ -389,8 +389,10 @@ button a:hover {
     padding: 0; }
 
 .quote {
-  float: left;
   width: 11.1111111111em; }
+  @media (min-width: 1201px) {
+    .quote {
+      float: left; } }
 
 /* button Transitions */
 .custom-btn {
@@ -455,6 +457,31 @@ a .svg-inline--fa, .fa-link {
 /***********************
 MAIN STYLES
 ***********************/
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: space-around; }
+  @media (min-width: 1201px) {
+    .form-wrapper {
+      display: flex;
+      flex-direction: row; } }
+
+.form-info {
+  align-items: center;
+  margin: 0 auto; }
+
+.form-info h2 {
+  padding-top: 4.4444444444em; }
+
+@media (min-width: 1201px) {
+  .form-info p {
+    text-align: left;
+    padding-left: 2.2222222222em; } }
+
+.form-info, .form-container {
+  max-width: 50%; }
+
 fieldset {
   width: 300px;
   display: flex;
@@ -565,7 +592,7 @@ footer p {
 /***************************
 BACKGROUND STYLES
 ***************************/
-.wrapper {
+.form-wrapper {
   background: #fff;
   padding: 80px 0; }
 
@@ -626,6 +653,9 @@ STYLES FOR LARGER SCREENS
 .privacy-bg {
   background-image: url("../images/cyber-3728141_1280.jpg"); }
 
+.form-info {
+  background-image: url("../images/entrepreneur-1340649_1280.jpg"); }
+
 a.twitter {
   background-image: url(../images/twitter.svg); }
 
@@ -649,26 +679,31 @@ a.github {
   devices slide in annimation
 
   **********************/
-.slide-left {
-  position: absolute;
-  left: 900px;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 1s;
-  transform: translate(600px); }
-
-@keyframes slide {
-  100% {
-    transform: translateX(0%); } }
-/* <div class="slide-slow">
- <div class="inner"> */
 .devices {
   width: 27.7777777778em;
   margin-top: 16.6666666667em; }
 
+/*
+.fade-in {
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+*/
+.slide-left {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: slide-in 1s forwards; }
+
+@keyframes slide-in {
+  from {
+    right: -1000px; }
+  to {
+    right: 440px; } }
 /*** End devices amnnimation ***/
   /********************
 
@@ -1134,6 +1169,10 @@ LINKS
 a {
   color: #fff; }
 
+/******* forms ***/
+.home-form {
+  color: #fff; }
+
 /******* Contact page styles *********/
 .contact-h1 {
   color: #00b6ff;
@@ -1291,6 +1330,8 @@ footer ul li {
   .card-icon:hover > svg, .card:hover > svg {
     color: #FC641F;
     transition: 1s; }
+  .card-icon:hover, .card:hover {
+    border: solid 1px #FC641F; }
   @media (min-width: 1201px) {
     .card-icon, .card {
       width: 30%; } }
