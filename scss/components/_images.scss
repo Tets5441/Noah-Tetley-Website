@@ -44,37 +44,33 @@
   **********************/
 
   
-  div.slide-show  {
-    animation: slide-show 5s;
-    margin-top:0%;
-  }
-  
-  @keyframes slide-show {
-    from {
-      margin-left: 20%;
-    }
+ .slide-left {
+  position: absolute;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1s;
+  transform: translate(600px);
+}
 
-    to {
-      margin-left: 0%;
-    }
-  }
-  
-  
+@keyframes slide {
+  100% { transform: translateX(0%); }
+}
+
  /* <div class="slide-slow">
   <div class="inner"> */
  
 
   .devices {
-    max-width: 40%;
+    width: em(500px);
     margin-top: em(300px);
-    @include mq (large) {
-      &:hover {
-        transform: scale(1.1);
-        transition: $fade-in;
-      }
-    }
   }
 
+
+  /*** End devices amnnimation ***/
 
 
   /********************

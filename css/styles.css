@@ -649,25 +649,27 @@ a.github {
   devices slide in annimation
 
   **********************/
-div.slide-show {
-  animation: slide-show 5s;
-  margin-top: 0%; }
+.slide-left {
+  position: absolute;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1s;
+  transform: translate(600px); }
 
-@keyframes slide-show {
-  from {
-    margin-left: 20%; }
-  to {
-    margin-left: 0%; } }
+@keyframes slide {
+  100% {
+    transform: translateX(0%); } }
 /* <div class="slide-slow">
  <div class="inner"> */
 .devices {
-  max-width: 40%;
+  width: 27.7777777778em;
   margin-top: 16.6666666667em; }
-  @media (min-width: 1201px) {
-    .devices:hover {
-      transform: scale(1.1);
-      transition: 1s; } }
 
+/*** End devices amnnimation ***/
   /********************
 
   ICONS
