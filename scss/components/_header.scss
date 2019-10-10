@@ -12,4 +12,17 @@ header {
       }
   }
 
+ .index-title{
+   @include mq (large) {
+   float: left;
+   text-align: left;
+   margin-left: em(80px);
+   }
+ }
+
+ /*** Privacy policy ***/
+
+ .privacy-headings {
+   text-align: center;
+ }
 

@@ -1,11 +1,4 @@
-.quote {
-    font-size: 24px;
-    color: #fff;
-    padding: 10px;
-    background: $theme-primary;
-    border: solid $theme-primary 2px;
-    border-radius: 5px;
-}
+
 
 #home-form a {
     color: #fff;
@@ -18,12 +11,129 @@ button a {
 button:hover {
     background: #fff;
     color: $theme-primary;
+    transition: $fade-in;
 }
 
 button a:hover {
     color: $theme-primary;
+    transition: $fade-in;
 }
 
 .btm-margin {
     margin-bottom: 60px;
+}
+
+  /* ================================= 
+    Button  for client cards
+  ==================================== */
+.custom-btn a {
+    color: $theme-secondary;
+    padding: 14px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.custom-btn {
+    color: #fff;
+    text-align: center;
+    max-width: em(220px);
+    height: em(50px);
+    font-weight: $font-weight-bold;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(0, 182, 255, 1);
+    padding: 12px 0;
+    border-radius: .5em;
+    margin: auto;
+    position: relative;
+    &:hover {
+        background: $theme-secondary;
+        border: solid em(2px) $theme-primary; 
+      }
+      &:hover > a {
+        color: $theme-primary;
+        padding: 0;
+    }
+  }
+
+  .quote {
+    float: left;
+    width: em(200px);
+}
+
+    /* button Transitions */
+  
+  .custom-btn {
+    transition: $fade-in;
+  }
+  
+ 
+
+  .custom-btn a:hover {
+    color: $theme-primary;
+  }
+  
+  .button {
+	color: #fff;
+	width: 75%;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgba(74,137,202, .65);
+	padding: 22px 0;
+	border-radius: .5em;
+	margin: 0;
+	position: relative;
+}
+.btn-icon {
+	opacity: 0;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 45%;
+	top: 27%;
+}
+
+a .svg-inline--fa, .fa-link {
+    color: white;
+    padding-bottom: 0;
+} 
+
+.btn-icon {
+	transition-property: opacity, left;
+	transition-duration: .5s;
+	transition-delay: .2s;
+    transition-timing-function: ease-in-out, ease-out;
+}
+
+.button:hover .btn-icon {
+	opacity: 1;
+	left: 70%;
+}
+
+
+  .button {
+	opacity: 0;
+	transition-property: opacity, background, box-shadow;
+	transition-duration: .5s;
+    transition-delay: .2s, .3s, 0s;
+}
+
+.button:hover {
+	background: rgba(74, 137, 202, 1);
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, .7);
+}
+
+.button a:hover {
+    color: $theme-secondary;
+    width: 100%;
+}
+
+.photo-overlay:hover .button {
+	opacity: 1;
 }

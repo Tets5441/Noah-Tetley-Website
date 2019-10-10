@@ -336,13 +336,9 @@ body {
   clear: both;
   display: table; }
 
-.quote {
-  font-size: 24px;
-  color: #fff;
-  padding: 10px;
-  background: #00b6ff;
-  border: solid #00b6ff 2px;
-  border-radius: 5px; }
+a:hover {
+  color: #FC641F;
+  transition: 1s; }
 
 #home-form a {
   color: #fff; }
@@ -352,13 +348,109 @@ button a {
 
 button:hover {
   background: #fff;
-  color: #00b6ff; }
+  color: #00b6ff;
+  transition: 1s; }
 
 button a:hover {
-  color: #00b6ff; }
+  color: #00b6ff;
+  transition: 1s; }
 
 .btm-margin {
   margin-bottom: 60px; }
+
+/* ================================= 
+  Button  for client cards
+==================================== */
+.custom-btn a {
+  color: #fff;
+  padding: 14px 0px;
+  width: 100%;
+  height: 100%; }
+
+.custom-btn {
+  color: #fff;
+  text-align: center;
+  max-width: 12.2222222222em;
+  height: 2.7777777778em;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #00b6ff;
+  padding: 12px 0;
+  border-radius: .5em;
+  margin: auto;
+  position: relative; }
+  .custom-btn:hover {
+    background: #fff;
+    border: solid 0.1111111111em #00b6ff; }
+  .custom-btn:hover > a {
+    color: #00b6ff;
+    padding: 0; }
+
+.quote {
+  float: left;
+  width: 11.1111111111em; }
+
+/* button Transitions */
+.custom-btn {
+  transition: 1s; }
+
+.custom-btn a:hover {
+  color: #00b6ff; }
+
+.button {
+  color: #fff;
+  width: 75%;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgba(74, 137, 202, 0.65);
+  padding: 22px 0;
+  border-radius: .5em;
+  margin: 0;
+  position: relative; }
+
+.btn-icon {
+  opacity: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 45%;
+  top: 27%; }
+
+a .svg-inline--fa, .fa-link {
+  color: white;
+  padding-bottom: 0; }
+
+.btn-icon {
+  transition-property: opacity, left;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out, ease-out; }
+
+.button:hover .btn-icon {
+  opacity: 1;
+  left: 70%; }
+
+.button {
+  opacity: 0;
+  transition-property: opacity, background, box-shadow;
+  transition-duration: .5s;
+  transition-delay: .2s, .3s, 0s; }
+
+.button:hover {
+  background: #4a89ca;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7); }
+
+.button a:hover {
+  color: #fff;
+  width: 100%; }
+
+.photo-overlay:hover .button {
+  opacity: 1; }
 
 /***********************
 MAIN STYLES
@@ -403,7 +495,7 @@ textarea {
 
 input, textarea {
   padding-left: 10px;
-  color: #fff;
+  color: #00b6ff;
   font-style: oblique;
   font-size: 20px; }
 
@@ -411,12 +503,12 @@ input, textarea {
 PSEUDO 
 ***************************/
 #textarea:focus, #county:focus, input:focus {
-  background: #FC641F;
+  background: #e6f8ff;
   transition-timing-function: ease-out;
   transition-duration: 2s; }
 
 #textarea:hover, #county:hover, input:hover {
-  background: #FC641F;
+  background: #e6f8ff;
   transition-duration: 1s; }
 
 input::placeholder, textarea::placeholder {
@@ -528,8 +620,11 @@ STYLES FOR LARGER SCREENS
 .my-work {
   background-image: url("../images/milky-way-2695569_1920 copy.jpg"); }
 
-.contact {
-  background-image: url("../images/jonatan-pie-198162.jpg"); }
+.contact-bg {
+  background-image: url("../images/tablet-1075790_1920.jpg"); }
+
+.privacy-bg {
+  background-image: url("../images/cyber-3728141_1280.jpg"); }
 
 a.twitter {
   background-image: url(../images/twitter.svg); }
@@ -542,6 +637,36 @@ a.github {
 
 .mb-img {
   max-width: 300px; }
+
+.index-img {
+  display: none; }
+  @media (min-width: 1201px) {
+    .index-img {
+      display: block; } }
+
+  /********************
+
+  devices slide in annimation
+
+  **********************/
+div.slide-show {
+  animation: slide-show 5s;
+  margin-top: 0%; }
+
+@keyframes slide-show {
+  from {
+    margin-left: 20%; }
+  to {
+    margin-left: 0%; } }
+/* <div class="slide-slow">
+ <div class="inner"> */
+.devices {
+  max-width: 40%;
+  margin-top: 16.6666666667em; }
+  @media (min-width: 1201px) {
+    .devices:hover {
+      transform: scale(1.1);
+      transition: 1s; } }
 
   /********************
 
@@ -570,7 +695,8 @@ a.social:hover {
   background-size: cover;
   align-items: center;
   background-attachment: inherit;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-top: 4.4444444444em; }
 
 .mock-wrapper {
   text-align: center; }
@@ -690,9 +816,6 @@ Icons
   align-self: center;
   padding-bottom: 10px; }
 
-.svg-inline--fa:hover {
-  color: #FC641F; }
-
 .fab,
 .fa-facebook-square,
 .fa-twitter-square,
@@ -701,47 +824,43 @@ Icons
 .fa-instagram {
   color: #fff; }
 
-.hr-1 {
-  max-width: 5.5555555556em;
-  border: 2px solid #00b6ff;
-  border-radius: 0.5555555556em; }
-
-hr.choose-us {
-  position: absolute; }
-
-/*******************************
-customer tiles
-*******************************/
-.clients {
-  margin: 0.5555555556em;
-  width: 16.6666666667em;
-  height: 16.6666666667em;
-  box-shadow: 1px 1px 15px 1px #00b6ff; }
-
-/* end customer tiles */
 /*******************************
 iphone
 *******************************/
 .iphone {
-  max-width: 50%;
-  align-self: center; }
+  display: none; }
   @media (min-width: 1201px) {
     .iphone {
+      display: block;
+      align-self: center;
       max-width: 10%;
       height: auto;
-      margin: auto; } }
-
-.iphone:hover {
-  transform: rotate(15deg);
-  transition: 1.2s; }
+      margin: auto; }
+      .iphone:hover {
+        transform: rotate(10deg) scale(1.1);
+        transition: 1s; } }
 
 /* end i phone */
+.divider {
+  max-width: 11.1111111111em; }
+
+@media (min-width: 1201px) {
+  .d2 {
+    margin-left: 0.5555555556em; } }
+
+/***** Testeminials *****/
+.test-img {
+  max-width: 4.4444444444em;
+  border-radius: 50%;
+  align-self: center;
+  margin: auto; }
+
 a {
   text-decoration: none;
   color: #999; }
 
 a:hover {
-  color: #6633ff; }
+  color: #fff; }
 
 /* Section Styles */
 .main-nav {
@@ -868,6 +987,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 /* end side bar*/
 /**************************************
+ highlight the current page !!!!!!!This does not work yet
+ **************************************/
+#index .home, #contact .contact, #menu {
+  font-weight: bold; }
+
+/**************************************
  Media Queries
  **************************************/
 @media (min-width: 1201px) {
@@ -903,11 +1028,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 @media (min-width: 1201px) {
   .nav-flex li a {
-    text-transform: lowercase;
+    font-size: 0.7777777778em;
     margin: 0 10px; }
     .nav-flex li a:hover {
       color: #FC641F;
-      transition: 1.2s; } }
+      transition: 1s; } }
 
 @media (min-width: 1201px) {
   .sidebarMenu ul {
@@ -928,7 +1053,7 @@ h1 {
 
 @media (min-width: 1201px) {
   .statement {
-    max-width: 77.7777777778em;
+    max-width: 50em;
     margin: 0 auto 40px auto; } }
 
 .color-head {
@@ -948,7 +1073,8 @@ p {
 
 h2 {
   font-size: 34px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  text-transform: uppercase; }
 
 .tag {
   font-family: cursive; }
@@ -969,7 +1095,8 @@ h3 {
 
 .testimonial-person,
 .testimonial-company {
-  color: #00b6ff; }
+  color: #00b6ff;
+  margin: 0.2777777778em 0; }
 
 h4 {
   font-size: 20px; }
@@ -995,11 +1122,20 @@ h3 .test-title {
 .h2-margin-top {
   margin-top: 3.3333333333em; }
 
+.client-title {
+  margin-bottom: 1.1111111111em;
+  line-height: 1.5em; }
+
 /***************
 LINKS
 ****************/
 a {
   color: #fff; }
+
+/******* Contact page styles *********/
+.contact-h1 {
+  color: #00b6ff;
+  margin: 4.4444444444em 0; }
 
 header {
   text-align: center;
@@ -1013,6 +1149,16 @@ header {
   @media (min-width: 1201px) {
     header {
       min-height: 800px; } }
+
+@media (min-width: 1201px) {
+  .index-title {
+    float: left;
+    text-align: left;
+    margin-left: 4.4444444444em; } }
+
+/*** Privacy policy ***/
+.privacy-headings {
+  text-align: center; }
 
 footer {
   width: 100%;
@@ -1031,6 +1177,9 @@ footer .copyright {
   @media (min-width: 1201px) {
     footer .copyright {
       font-size: 1.3em; } }
+
+footer p {
+  margin-bottom: 0; }
 
 ul.skills {
   padding: 0;
@@ -1087,6 +1236,7 @@ footer ul li {
       flex-direction: row;
       padding: 80px 50px; } }
 
+/**** end testimonials *****/
 .why-us {
   display: flex;
   flex-direction: column;
@@ -1105,7 +1255,7 @@ footer ul li {
 
 .column-left {
   color: #fff; }
-  @media (min-width: 769px) {
+  @media (min-width: 1201px) {
     .column-left {
       text-align: left;
       max-width: 50%;
@@ -1133,12 +1283,25 @@ footer ul li {
   transition: all .5s;
   min-height: 320px;
   border: solid #E3E5E6 1px; }
+  .card-icon:hover > h3, .card:hover > h3 {
+    color: #FC641F;
+    transition: 1s; }
+  .card-icon:hover > svg, .card:hover > svg {
+    color: #FC641F;
+    transition: 1s; }
   @media (min-width: 1201px) {
     .card-icon, .card {
       width: 30%; } }
 
+@media (min-width: 769px) {
+  .card-icon {
+    max-width: 33.7222222222em; } }
+
 .card-2 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 10px;
   background: rgba(5, 5, 5, 0.5);
   padding: 10px;
@@ -1147,13 +1310,6 @@ footer ul li {
     .card-2 {
       width: 30%; } }
 
-.clients-wrapper {
-  max-width: 1424px;
-  margin: auto; }
-
-.card:hover {
-  box-shadow: 2px 2px 25px 2px #fff; }
-
 .blurb {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -1161,9 +1317,6 @@ footer ul li {
   text-align: center;
   background: #fff;
   transition: all .5s; }
-
-.blurb, .card-icon:hover {
-  box-shadow: 2px 2px 25px 2px #fff; }
 
 .flex.row-3.blurb-2 {
   background-position: top center;
@@ -1178,6 +1331,52 @@ temporary styles for contact card
 .temp {
   max-width: 500px;
   margin: auto; }
+
+/****************************
+Clients Photo containers and overlay
+***************************/
+.clients-wrapper {
+  max-width: 1424px;
+  margin: auto; }
+
+.photo {
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  max-width: 16.6666666667em;
+  margin: 1.1111111111em auto;
+  box-shadow: 2px 2px 25px 2px #000;
+  border: solid 1px #00b6ff; }
+
+.photo-container img {
+  max-width: 100%; }
+
+/* ---- Photo Overlay ---- */
+.photo-overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65); }
+
+/* ================================= 
+  Photo Overlay Transition
+==================================== */
+.photo-overlay {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .5s; }
+
+.photo-overlay:hover {
+  opacity: 1; }
 
 td, th {
   border: 1px solid #dddddd;

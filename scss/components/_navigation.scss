@@ -3,7 +3,7 @@ a {
     color: #999;
   }
   a:hover {
-    color: #6633ff;
+    color: $theme-secondary;
   }
   
   /* Section Styles */
@@ -74,13 +74,13 @@ a {
  input[type="checkbox"]:checked ~ .sidebarMenu { transform: translateX(0); }
 
 input[type=checkbox] {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   display: none;
 }
 
 .sidebarIconToggle {
-    transition: all 0.3s;
+    transition: all $nav;
     box-sizing: border-box;
     cursor: pointer;
     /*position: absolute;*/
@@ -96,7 +96,7 @@ input[type=checkbox] {
 }
 
 .spinner {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   position: absolute;
   height: 3px;
@@ -105,7 +105,7 @@ input[type=checkbox] {
 }
 
 .horizontal {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   position: relative;
   float: left;
@@ -114,13 +114,13 @@ input[type=checkbox] {
 
 .diagonal.part-1 {
   position: relative;
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   float: left;
 }
 
 .diagonal.part-2 {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   position: relative;
   float: left;
@@ -128,20 +128,20 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   opacity: 0;
 }
 
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   transform: rotate(135deg);
   margin-top: 8px;
 }
 
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-  transition: all 0.3s;
+  transition: all $nav;
   box-sizing: border-box;
   transform: rotate(-135deg);
   margin-top: -9px;
@@ -149,6 +149,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 /* end side bar*/
+
+/**************************************
+ highlight the current page !!!!!!!This does not work yet
+ **************************************/
+
+ #index .home, #contact .contact, #menu {
+    font-weight: bold;
+ }
 
 /**************************************
  Media Queries
@@ -194,11 +202,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .nav-flex li a {
   @include mq (large) {
-    text-transform: lowercase;
+    font-size: em(14px);
     margin: 0 10px;
     &:hover {
       color: $hover;
-      transition: 1.2s;
+      transition: $fade-in;
     }
   }
 }

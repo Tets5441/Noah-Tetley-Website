@@ -7,8 +7,12 @@
     background-image: url('../images/milky-way-2695569_1920\ copy.jpg');
 }
 
-.contact {
-    background-image: url('../images/jonatan-pie-198162.jpg');
+.contact-bg {
+    background-image: url('../images/tablet-1075790_1920.jpg');
+}
+
+.privacy-bg {
+  background-image: url('../images/cyber-3728141_1280.jpg');
 }
 
 
@@ -24,6 +28,51 @@
 
   .mb-img {
     max-width: 300px;
+  }
+
+  .index-img {
+    display: none;
+    @include mq (large) {
+      display: block;
+    }
+  }
+
+  /********************
+
+  devices slide in annimation
+
+  **********************/
+
+  
+  div.slide-show  {
+    animation: slide-show 5s;
+    margin-top:0%;
+  }
+  
+  @keyframes slide-show {
+    from {
+      margin-left: 20%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
+  
+  
+ /* <div class="slide-slow">
+  <div class="inner"> */
+ 
+
+  .devices {
+    max-width: 40%;
+    margin-top: em(300px);
+    @include mq (large) {
+      &:hover {
+        transform: scale(1.1);
+        transition: $fade-in;
+      }
+    }
   }
 
 
@@ -59,6 +108,7 @@
     align-items: center;
     background-attachment: inherit;
     padding-bottom: 0;
+    margin-top: em(80px);
 }
 
  .mock-wrapper {
@@ -205,10 +255,6 @@ Icons
   padding-bottom: 10px;
 }
 
-.svg-inline--fa:hover {
-  color: $hover;
-}
-
 .fab,
 .fa-facebook-square,
 .fa-twitter-square,
@@ -218,50 +264,49 @@ Icons
   color: $theme-secondary;
 }
 
-.hr-1 {
-  max-width: em(100px);
-  border: 2px solid $theme-primary;
-  border-radius: em(10px);
-}
-
-hr.choose-us {
-  position: absolute;
-}
-
-/*******************************
-customer tiles
-*******************************/
 
 
-.clients {
-  margin: em(10px);
-  width: em(300px);
-  height: em(300px);
-  box-shadow: 1px 1px 15px 1px $theme-primary;
-}
-
-/* end customer tiles */
 
 /*******************************
 iphone
 *******************************/
 
-.iphone {
-  max-width: 50%;
-  align-self: center;
+.iphone { 
+  display: none;
     @include mq (large) {
+      display: block;
+      align-self: center;
       max-width: 10%;
       height: auto;
       margin: auto;
+      &:hover {
+        transform: rotate(10deg) scale(1.1);
+        transition: $fade-in;
+      }
     }
 }
 
-.iphone:hover {
-  transform: rotate(15deg);
-  transition: 1.2s;
-}
 
 /* end i phone */
+
+.divider {
+  max-width: em(200px);
+}
+
+.d2 {
+  @include mq (large) {
+    margin-left: em(10px);
+  }
+}
+
+/***** Testeminials *****/
+
+.test-img {
+  max-width: em(80px);
+  border-radius: 50%;
+  align-self: center;
+  margin: auto;
+}
 
   
 

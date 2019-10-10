@@ -42,4 +42,10 @@
     clear: both;
     display: table;
   }
+
+  a:hover {
+    color: $hover;
+    transition: $fade-in;
+  }
  
+  

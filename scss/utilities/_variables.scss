@@ -2,7 +2,6 @@ $font-url-google : "https://fonts.googleapis.com/css?family=Atomic+Age|Roboto:30
 $font-primary   :   'Roberto', sans-serif;
 $font-secondary-sans : cursive;
 
-// 'Atomic Age',
 
 // font weight
 
@@ -41,6 +40,7 @@ $bg-3        :   #f7f7f7;
 $dark-font-2 :   #525252;
 $hover       :   #FC641F;
 $border-light:   #E3E5E6;
+$inputs      :   #e6f8ff;
 
 // main theme backgrounds
 
@@ -57,3 +57,8 @@ $font-c-secondary : $dark-font-2;
 
 $b : 1.5em;
 $blur: blur(9px);
+
+// transitons and transforms 
+
+$fade-in : 1s;
+$nav : 0.3s
