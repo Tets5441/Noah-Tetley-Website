@@ -1,24 +1,5 @@
-.card-wrapper, .row-2 {
-  @include flexbox ($disp: flex,
-  $dir: column,
-  $wrap: wrap,
-  $just: space-around);
-  align-items: center;
-  background: $theme-secondary;
-  color: $font-c-secondary;
-     @include mq(medium) {
-        @include flexbox($dir: row);
-        padding: 50px;
-  }
-} 
-
-
 .card {
   min-height: 352px;
-}
-
-.wrapper-grey {
-  background: $theme-tertiary;
 }
 
 /*TESTIMONIALS SECTION */
@@ -33,8 +14,6 @@
     padding: 80px 50px;
   }
 }
-
-
 
 /**** end testimonials *****/
 

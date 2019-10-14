@@ -1253,7 +1253,7 @@ header {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 40pxfff;
+  padding: 20px 40px;
   background: #00b6ff;
   margin: 0;
   padding: 60px 0; }
@@ -1297,25 +1297,8 @@ footer ul li {
 ul {
   list-style: none; }
 
-.card-wrapper, .row-2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background: #fff;
-  color: #525252; }
-  @media (min-width: 769px) {
-    .card-wrapper, .row-2 {
-      display: flex;
-      flex-direction: row;
-      padding: 50px; } }
-
 .card {
   min-height: 352px; }
-
-.wrapper-grey {
-  background: #f7f7f7; }
 
 /*TESTIMONIALS SECTION */
 .testimonials {
@@ -1496,6 +1479,24 @@ Clients Photo containers and overlay
 
 table {
   text-align: left; }
+
+/*************** Cards wrapper ****************/
+.card-wrapper, .row-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  color: #525252; }
+  @media (min-width: 769px) {
+    .card-wrapper, .row-2 {
+      display: flex;
+      flex-direction: row;
+      padding: 50px; } }
+
+.wrapper-grey {
+  background: #f7f7f7; }
 
 /*************** Clients wrapper ****************/
 .clients-wrapper {
