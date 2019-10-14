@@ -31,7 +31,7 @@ a {
     position: fixed;
     right: 0;
     width: 250px;
-    margin-top: 74.5px;
+    margin-top: em(66px);
     transform: translateX( 250px);
     transition: transform 250ms ease-in-out;
     background: $theme-primary;

@@ -1,0 +1,46 @@
+
+/*************** Clients wrapper ****************/
+
+  .clients-wrapper {
+    margin: auto;
+    max-width: em(737px);
+    @include mq(large) {max-width: 1424px;
+    }
+  }
+
+/***************about page ****************/
+
+.about-wrapper {
+    margin: em(80px) 0 em(120px);
+    @include flexbox ($disp: flex, $dir: column, $wrap: wrap, $just: space-around);
+   @include mq (medium) {
+       @include flexbox ($dir: row);
+   }
+}
+
+/*************** contact page wrappers ****************/
+
+.contact-content {
+    @include flexbox ($disp: flex, $dir: column, $wrap: wrap, $just: space-between);
+    margin: 0 0 em(20px);
+    @include mq (medium) {
+        @include flexbox ($dir: row);
+        @include mq (large) {
+            max-width: 1200px;
+            margin: auto;
+        }
+    }
+}
+
+.title-col {
+    @include mq (medium) {
+        max-width: 30%;
+        margin-top: em(80px)
+    }
+}
+
+
+
+/*************** # ****************/
+/*************** # ****************/
+/*************** # ****************/

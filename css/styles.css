@@ -479,8 +479,9 @@ MAIN STYLES
     text-align: left;
     padding-left: 2.2222222222em; } }
 
-.form-info, .form-container {
-  max-width: 50%; }
+@media (min-width: 1201px) {
+  .form-info, .form-container {
+    max-width: 50%; } }
 
 fieldset {
   width: 300px;
@@ -656,6 +657,12 @@ STYLES FOR LARGER SCREENS
 .form-info {
   background-image: url("../images/entrepreneur-1340649_1280.jpg"); }
 
+.about-header {
+  background-image: url("../images/notebook-581128_1920.jpg"); }
+
+.services-header {
+  background-image: url("../images/computer-1343393_1280.jpg"); }
+
 a.twitter {
   background-image: url(../images/twitter.svg); }
 
@@ -726,6 +733,10 @@ a.social:hover {
 .clearfix {
   clear: both; }
 
+svg.contact-page-i {
+  color: #00b6ff; }
+
+/**********end icons ***********/
 .test-wrapper {
   background-image: url(../images/workplace-1245776_1280.jpg);
   background-repeat: no-repeat;
@@ -892,6 +903,25 @@ iphone
   align-self: center;
   margin: auto; }
 
+/*************************
+ABOUT PAGE 
+*************************/
+.profile-img {
+  max-width: 30%;
+  float: left;
+  clear: both;
+  margin: 0.8333333333em;
+  border: solid 0.1111111111em grey; }
+  @media (min-width: 1201px) {
+    .profile-img {
+      max-width: 50%; } }
+
+.about-img-2 {
+  max-width: 30%;
+  float: right;
+  clear: both;
+  margin: auto; }
+
 a {
   text-decoration: none;
   color: #999; }
@@ -920,7 +950,7 @@ Nav hamburger menu The necessary CSS styles for the navigation.
   position: fixed;
   right: 0;
   width: 250px;
-  margin-top: 74.5px;
+  margin-top: 3.6666666667em;
   transform: translateX(250px);
   transition: transform 250ms ease-in-out;
   background: #00b6ff; }
@@ -1178,6 +1208,25 @@ a {
   color: #00b6ff;
   margin: 4.4444444444em 0; }
 
+td a p {
+  color: #525252; }
+
+/******* About page styles *********/
+.about-content {
+  text-align: left; }
+
+.wiki-link {
+  color: #00b6ff; }
+  .wiki-link:hover {
+    color: #FC641F; }
+
+/******* Services page styles *********/
+.services-heading {
+  color: #00b6ff;
+  line-height: 1em;
+  margin-top: 2.2222222222em;
+  padding-top: 0; }
+
 header {
   text-align: center;
   background-position: top center;
@@ -1244,6 +1293,9 @@ footer ul {
 
 footer ul li {
   display: inline-block; }
+
+ul {
+  list-style: none; }
 
 .card-wrapper, .row-2 {
   display: flex;
@@ -1378,10 +1430,6 @@ temporary styles for contact card
 /****************************
 Clients Photo containers and overlay
 ***************************/
-.clients-wrapper {
-  max-width: 1424px;
-  margin: auto; }
-
 .photo {
   position: relative;
   line-height: 0;
@@ -1421,11 +1469,78 @@ Clients Photo containers and overlay
 .photo-overlay:hover {
   opacity: 1; }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px; }
+/*************** Contact card ***************/
+.contact-card {
+  background: #f7f7f7;
+  max-width: 380px;
+  align-self: center;
+  margin: auto;
+  padding: 2.2222222222em; }
+  @media (min-width: 769px) {
+    .contact-card {
+      margin: 0;
+      max-width: 30%;
+      margin: 1.6666666667em 0; } }
 
+@media (min-width: 1201px) {
+  .title-card {
+    max-width: 30%; } }
+
+.rocket {
+  width: 40%;
+  align-self: center;
+  transform: rotate(20deg); }
+  .rocket:hover {
+    transform: rotate(360deg);
+    transition: 3s; }
+
+table {
+  text-align: left; }
+
+/*************** Clients wrapper ****************/
+.clients-wrapper {
+  margin: auto;
+  max-width: 40.9444444444em; }
+  @media (min-width: 1201px) {
+    .clients-wrapper {
+      max-width: 1424px; } }
+
+/***************about page ****************/
+.about-wrapper {
+  margin: 4.4444444444em 0 6.6666666667em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  @media (min-width: 769px) {
+    .about-wrapper {
+      display: flex;
+      flex-direction: row; } }
+
+/*************** contact page wrappers ****************/
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 1.1111111111em; }
+  @media (min-width: 769px) {
+    .contact-content {
+      display: flex;
+      flex-direction: row; } }
+  @media (min-width: 769px) and (min-width: 1201px) {
+    .contact-content {
+      max-width: 1200px;
+      margin: auto; } }
+
+@media (min-width: 769px) {
+  .title-col {
+    max-width: 30%;
+    margin-top: 4.4444444444em; } }
+
+/*************** # ****************/
+/*************** # ****************/
+/*************** # ****************/
 .slick-slider {
   width: 70%;
   margin: auto; }

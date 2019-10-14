@@ -28,7 +28,9 @@ MAIN STYLES
 }
 
 .form-info, .form-container {
-    max-width: 50%;
+    @include mq (large) {
+        max-width: 50%;
+    }
 }
 
 

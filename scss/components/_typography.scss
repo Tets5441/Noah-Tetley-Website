@@ -129,3 +129,28 @@ a {
   margin: em(80px) 0;
 }
 
+td a p {
+  color: $font-c-secondary;
+}
+
+/******* About page styles *********/
+
+.about-content {
+  text-align: left;
+}
+
+.wiki-link {
+  color: $theme-primary;
+  &:hover {
+    color: $hover;
+  }
+}
+
+/******* Services page styles *********/
+
+.services-heading {
+  color: $theme-primary;
+  line-height: 1em;
+  margin-top: em(40px);
+  padding-top: 0;
+}

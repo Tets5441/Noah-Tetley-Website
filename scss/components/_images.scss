@@ -19,6 +19,14 @@
   background-image: url('../images/entrepreneur-1340649_1280.jpg');
 }
 
+.about-header {
+  background-image: url('../images/notebook-581128_1920.jpg')
+}
+
+.services-header {
+  background-image: url('../images/computer-1343393_1280.jpg')
+}
+
 
   a.twitter {
     background-image: url(../images/twitter.svg);
@@ -107,6 +115,12 @@
   .clearfix {
     clear: both;
   }
+
+  svg.contact-page-i {
+    color: $theme-primary;
+  }
+
+  /**********end icons ***********/
 
 .test-wrapper {
     background-image: url(../images/workplace-1245776_1280.jpg);
@@ -316,4 +330,24 @@ iphone
 }
 
   
+/*************************
+ABOUT PAGE 
+*************************/
 
+.profile-img {
+  max-width: 30%;
+  float: left;
+  clear: both;
+  margin: em(15px);
+  border: solid em(2px) $border;
+  @include mq(large) {
+    max-width: 50%;
+  }
+}
+
+.about-img-2 {
+  max-width: 30%;
+  float: right;
+  clear: both;
+  margin: auto;
+}
