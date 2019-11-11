@@ -460,7 +460,7 @@ MAIN STYLES
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: space-around; }
   @media (min-width: 1201px) {
     .form-wrapper {
@@ -641,6 +641,9 @@ STYLES FOR LARGER SCREENS
 
   .subheader {
     width: 100%; } }
+#home-form a {
+  color: #FC641F; }
+
 .home {
   background-image: url("../images/bgimg.jpg");
   height: 100%; }

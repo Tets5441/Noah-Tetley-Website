@@ -5,7 +5,7 @@ MAIN STYLES
 ***********************/
 
 .form-wrapper {
-    @include flexbox ($disp: flex, $dir: column, $wrap: no-wrap, $just: space-around); 
+    @include flexbox ($disp: flex, $dir: column, $wrap: nowrap, $just: space-around); 
     @include mq (large) {
         @include flexbox ($dir: row);
     }
@@ -240,4 +240,8 @@ STYLES FOR LARGER SCREENS
         width: 100%;
     }
 
+}
+
+#home-form a {
+    color: $hover;
 }

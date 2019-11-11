@@ -75,7 +75,7 @@
               </tr>
               <tr>
                 <td><i class="fab fa-facebook-square contact-page-i" title="Get more followers on Facebook through your website"></i></td>
-                <td><a href="#"><p class="contact-card-p">Follow us</p></a></td>
+                <td><a href="https://www.facebook.com/NT-Web-Design-106709707432284/" target="_blank"><p class="contact-card-p">Follow us</p></a></td>
               </tr>
               <tr>
                 <td><i class="fas fa-map-marker-alt" title="Map marker icon"></i></td>
@@ -87,35 +87,38 @@
             </ul>
          </div>
       </div>
-      <div class="form-wrapper wrapper-grey">
+      <div class="form-wrapper wrapper-grey" id="home-form">
           <div class="form-info">
-                  <h2 class="home-form">START YOUR PROJECT</h2>
-                  <p class="home-form">If you're ready to get started, or just have some questions about our services, please fill out the form and we'll get back to you soon</p>
+              <h2 class="home-form">Start your project today</h2>
+              <p class="home-form">If you would like to get started, or would just like to ask some questions about web design, development or any of our services then please get in touch. </p>
+ 
           </div>
-          <fieldset class="form-container">        
-              <div class="block-2">
-              <input required type="text" id="name" name="user-name" placeholder="Name-Required">
-              </div>
-              
-              <div class="block-2">
-              <input required type="email" id="mail" name="user-email" placeholder="Email-Required">
-              </div>
-              
-              <div class="block-2">
-              <input required type="tel" id="tel" name="user-phone-numbr" placeholder="Telephone">
-              </div>   
-                  <textarea id="textarea" name="textarea" placeholder="your message here!"></textarea>
-                  <button type="submit" class="submit">Send message</button>                              
+          <fieldset class="form-container">  
+              <form name="contactform" method="post" action="send_form_email.php">      
+                  <div class="block-2">
+                  <input required type="text" id="name" name="user_name" placeholder="your name">
+                  </div>
+                  
+                  <div class="block-2">
+                  <input required type="email" id="mail" name="user_email" placeholder="email address">
+                  </div>
+                  
+                  <div class="block-2">
+                  <input required type="tel" id="tel" name="user_phone" placeholder="telephone (optional)">
+                  </div>   
+                      <textarea id="textarea" name="message" placeholder="your message"></textarea>
+                      <button type="submit" class="submit">Send message</button>                              
+              </form>
           </fieldset>
       </div>
         <div id="map"></div>
     <footer>
         <ul>
-            <li><a href="https://www.facebook.com/Wasted-Years-Digital-239239943670721/?modal=admin_todo_tour"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://twitter.com/WastedDigital?lang=en"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="https://linkedin.com/in/noah-tetley-acicm-bb998590"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/tets5441"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://www.instagram.com/wastedyearsdigital/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/NT-Web-Design-106709707432284/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <!-- <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li> -->
+          <li><a href="https://linkedin.com/in/noah-tetley-acicm-bb998590" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/tets5441" target="_blank"><i class="fab fa-github-square"></i></a></li>
+          <!--  <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li> -->
         </ul>
       <p class="copyright">Copyright 2019, Noah Tetley</p>
       <p><a href="privacy.html">Privacy Policy</a></p> 
